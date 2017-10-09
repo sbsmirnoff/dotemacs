@@ -42,3 +42,12 @@
 		(lambda () (interactive) (dired "~/")))
 (global-set-key (kbd "ESC ESC s")
 		(lambda () (interactive) (switch-to-buffer "*scratch*")))
+
+(setq ibuffer-saved-filter-groups
+      '(("home"
+	 ("dired" (mode . dired-mode))
+	 ("emacs" (name . "^\\*.*\\*$"))
+	 ("dotfiles" (name . "^\\..*")))))
+(add-hook 'ibuffer-mode-hook
+	  '(lambda ()
+	     (ibuffer-switch-to-saved-filter-groups "home")))
