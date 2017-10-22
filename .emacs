@@ -32,7 +32,7 @@
 
 (global-set-key (kbd "<M-up>") 'backward-paragraph)
 (global-set-key (kbd "<M-down>") 'forward-paragraph)
-(global-set-key (kbd "M-é") 'mark-word)
+(global-set-key (kbd "M-µ") 'mark-word)
 (global-set-key (kbd "<C-tab>") 'other-frame)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
