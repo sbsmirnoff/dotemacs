@@ -3,6 +3,10 @@
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (setq inhibit-startup-screen t)
+(show-paren-mode 1)
+(electric-pair-mode 1)
+
+(setq-default indent-tabs-mode nil)
 
 (windmove-default-keybindings)
 
