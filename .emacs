@@ -11,8 +11,12 @@
 (windmove-default-keybindings)
 
 (setq scroll-step 1)
+(setq hscroll-margin 0)
+(setq hscroll-step 1)
 (setq backup-directory-alist `(("." . "~/.saves")))
+(setq-default tab-width 4)
 (setq-default c-basic-offset 4)
+(setq nxml-child-indent 4 nxml-attribute-indent 4)
 (setq dired-dwim-target t)
 
 (defun mark-whole-line ()
@@ -27,6 +31,7 @@
 
 (global-set-key (kbd "C-c l") 'mark-whole-line)
 (global-set-key (kbd "C-c e") 'mark-line)
+(global-set-key (kbd "C-c t") 'toggle-truncate-lines)
 
 (global-set-key (kbd "<C-up>") 'beginning-of-buffer)
 (global-set-key (kbd "<C-down>") 'end-of-buffer)
