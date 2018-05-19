@@ -45,6 +45,10 @@
 (global-set-key (kbd "<C-tab>") 'other-frame)
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
+(global-set-key (kbd "C-à") 'enlarge-window-horizontally)
+(global-set-key (kbd "C-ç") 'shrink-window-horizontally)
+(global-set-key (kbd "C-§") 'enlarge-window)
+
 (global-set-key (kbd "ESC ESC c")
 		(lambda () (interactive) (find-file "~/.emacs")))
 (global-set-key (kbd "ESC ESC i")
